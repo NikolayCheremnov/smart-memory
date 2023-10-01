@@ -7,6 +7,11 @@ Randomizer::Randomizer()
 
 }
 
+bool Randomizer::next_bool()
+{
+    return next_int(0, 1);
+}
+
 double Randomizer::next_double(double min, double max)
 {
     static std::random_device rd;

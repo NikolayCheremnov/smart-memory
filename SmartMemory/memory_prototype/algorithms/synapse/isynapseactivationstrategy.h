@@ -5,12 +5,14 @@
 #include <model/synapse.h>
 
 
+
 namespace algorithms {
 
     class ISynapseActivationStrategy
     {
     public:
         ISynapseActivationStrategy();
+        virtual ~ISynapseActivationStrategy(){}
         //
         virtual void calculate_synapse_activation(model::SynapsePtr synapse) = 0;
     };

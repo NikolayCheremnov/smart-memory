@@ -19,6 +19,7 @@ LIBS += -L../memory/debug -lmemory
 SOURCES += \
         main.cpp
 
+
 # adding boost
 greaterThan(QT_MAJOR_VERSION, 4) {
     TARGET_ARCH=$${QT_ARCH}

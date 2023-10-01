@@ -6,12 +6,16 @@
 
 
 namespace algorithms {
+
+    // IColumnActivationStrategy incapsulates strategy of column activation
+    // that makes column_activation according
+    // proximal dendritic segment state.
     class IColumnActivationStrategy
     {
     public:
         IColumnActivationStrategy();
-        //
-        virtual void calculate_column_activation(model::CorticalColumnPtr column) = 0;
+        virtual ~IColumnActivationStrategy(){}
+        virtual bool calculate_column_activation(model::CorticalColumnPtr column) = 0;
     };
 }
 

@@ -3,6 +3,7 @@
 using namespace model;
 
 Synapse::Synapse()
+    : weight{BinaryWeight::SLEEP}, permanent{0.0}
 {
 
 }

@@ -12,6 +12,7 @@ namespace utils {
         Randomizer();
 
         //
+        static bool next_bool();
         static double next_double(double min, double max);
         static int32_t next_int(int32_t min, int32_t max);
     };
